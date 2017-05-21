@@ -49,6 +49,7 @@ public class MapActivity extends AppCompatActivity {
             public void onFinish() {
                 start_button.setText(map.timeText());
                 info_text.setText(map.getInfoText());
+                // The first timer may be different the the rest so update to the second time
                 map.setFirst();
             }
         };
